@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.0.2",
-      "release": "versi 5",
+      "version": "1.0.1",
+      "release": "versi 1",
       "updated_at": {
-        "seconds": 1722340576,
-        "nanoseconds": 210000000
+        "seconds": 1722342352,
+        "nanoseconds": 471000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=33770b04-a01f-49b7-9707-49e5d19fad56"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=447877a3-94d5-4dcd-8135-0cf140c6f2c1"
     }
   ]
 }
