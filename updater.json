@@ -9,16 +9,6 @@
         "nanoseconds": 679000000
       },
       "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FJBuilder%2Fupdate.zip?alt=media&token=350b7af3-de4e-4483-9c3d-1151baeee3e6"
-    },
-    {
-      "product": "KasirAs",
-      "version": "1.0.3",
-      "release": "Fitur Update",
-      "updated_at": {
-        "seconds": 1722335234,
-        "nanoseconds": 314000000
-      },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2FKasirAs.zip?alt=media&token=b5537454-c52e-4a7e-9fea-6c86ff3042c2"
     }
   ]
 }
