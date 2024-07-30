@@ -9,6 +9,16 @@
         "nanoseconds": 679000000
       },
       "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FJBuilder%2Fupdate.zip?alt=media&token=350b7af3-de4e-4483-9c3d-1151baeee3e6"
+    },
+    {
+      "product": "KasirAs",
+      "version": "1.0.2",
+      "release": "versi 5",
+      "updated_at": {
+        "seconds": 1722340576,
+        "nanoseconds": 210000000
+      },
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=33770b04-a01f-49b7-9707-49e5d19fad56"
     }
   ]
 }
