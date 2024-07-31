@@ -1,0 +1,24 @@
+{
+  "activations": [
+    {
+      "id": "ecBtmjXPmsLG7JCovD8g",
+      "version": "2.2.42",
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Application%2FJBuilder2.2.42.exe?alt=media&token=7ad0029c-7e61-4eda-badb-1f1df96b8348",
+      "product": "JBuilder",
+      "updated_at": {
+        "seconds": 1720520241,
+        "nanoseconds": 923000000
+      }
+    },
+    {
+      "id": "SXPpCZ84hRc4waGiv8iQ",
+      "version": "1.0.2",
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Application%2FKasirAs1.0.2.exe?alt=media&token=6503a06c-c6ec-4e39-9f77-d3ed2e08d5db",
+      "product": "KasirAs",
+      "updated_at": {
+        "seconds": 1722380828,
+        "nanoseconds": 157000000
+      }
+    }
+  ]
+}
