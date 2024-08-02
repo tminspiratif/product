@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.0.6",
-      "release": "Mengubah label button\nbug lainnya yang tersembunyi",
+      "version": "1.0.7",
+      "release": "Mengatasi timeout koneksi database",
       "updated_at": {
-        "seconds": 1722585447,
-        "nanoseconds": 530000000
+        "seconds": 1722619087,
+        "nanoseconds": 501000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=892f66cc-24f5-4807-9f9f-c68a47c90c85"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=72c00a16-2a9e-4eac-9c9a-129f36614b70"
     }
   ]
 }
