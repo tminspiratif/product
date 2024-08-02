@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.0.3",
-      "release": "Konfigurasi mysql dump \nBackup database\nRestore database\nReset database",
+      "version": "1.0.4",
+      "release": "Informasi Versi Update\nKonfigurasi mysql dump \nBackup database\nRestore database\nReset database",
       "updated_at": {
-        "seconds": 1722567207,
-        "nanoseconds": 306000000
+        "seconds": 1722568215,
+        "nanoseconds": 668000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=85c47f11-e3b7-4baa-9037-e99e5ce6ab54"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=3e892b7d-710d-4530-8f2a-a5c816cd19fa"
     }
   ]
 }
