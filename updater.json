@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.0.7",
-      "release": "Mengatasi timeout koneksi database",
+      "version": "1.0.8",
+      "release": "Minimalizer process over",
       "updated_at": {
-        "seconds": 1722619087,
-        "nanoseconds": 501000000
+        "seconds": 1722648699,
+        "nanoseconds": 285000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=72c00a16-2a9e-4eac-9c9a-129f36614b70"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=b0931a89-0db7-48d8-8b9b-64bae4caf309"
     }
   ]
 }
