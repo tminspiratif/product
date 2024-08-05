@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.0.8",
-      "release": "Minimalizer process over",
+      "version": "1.0.9",
+      "release": "Optimize execute",
       "updated_at": {
-        "seconds": 1722648699,
-        "nanoseconds": 285000000
+        "seconds": 1722828204,
+        "nanoseconds": 151000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=b0931a89-0db7-48d8-8b9b-64bae4caf309"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=2447b34f-084f-49fa-9da4-8cc9f7fb9560"
     }
   ]
 }
