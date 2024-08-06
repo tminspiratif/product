@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.0.9",
-      "release": "Optimize execute",
+      "version": "1.0.10",
+      "release": "Mengganti logo\nBug Transaksi Kasir",
       "updated_at": {
-        "seconds": 1722828204,
-        "nanoseconds": 151000000
+        "seconds": 1722908878,
+        "nanoseconds": 611000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=2447b34f-084f-49fa-9da4-8cc9f7fb9560"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=73eebf22-d011-46da-ab9d-d7c6d59dd332"
     }
   ]
 }
