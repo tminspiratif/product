@@ -2,11 +2,11 @@
   "data": [
     {
       "product": "JBuilder",
-      "version": "2.2.42",
+      "version": "2.2.43",
       "release": "Memperbaiki pada saat menghapus data ruang di Master Ruang\nBug Lainnya",
       "updated_at": {
-        "seconds": 1724745375,
-        "nanoseconds": 592000000
+        "seconds": 1724745387,
+        "nanoseconds": 817000000
       },
       "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FJBuilder%2Fupdate.zip?alt=media&token=ca848cf4-9c5a-4906-b61e-c48a305efd97"
     },
