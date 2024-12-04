@@ -2,13 +2,13 @@
   "data": [
     {
       "product": "JBuilder",
-      "version": "2.2.43",
-      "release": "Memperbaiki pada saat menghapus data ruang di Master Ruang\nBug Lainnya",
+      "version": "2.3.1",
+      "release": "Memperbarui jalur update untuk versi berikutnya",
       "updated_at": {
-        "seconds": 1724745707,
-        "nanoseconds": 298000000
+        "seconds": 1733286342,
+        "nanoseconds": 659000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FJBuilder%2Fupdate.zip?alt=media&token=73e6ec63-b8c4-46e8-a702-d513a9836ffe"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FJBuilder%2Fupdate.zip?alt=media&token=13327495-7818-439b-a1c8-797aa9625aa6"
     },
     {
       "product": "KasirAs",
