@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "release": "Mengubah jalur update",
       "updated_at": {
-        "seconds": 1733373650,
-        "nanoseconds": 463000000
+        "seconds": 1733375361,
+        "nanoseconds": 500000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=7598ed12-74d7-490b-9948-920be9af7661"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2FKasirAs1.2.2.exe?alt=media&token=4b8a65f1-a893-4d58-949d-6e981b1b2eda"
     }
   ]
 }
