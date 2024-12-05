@@ -12,13 +12,13 @@
     },
     {
       "product": "KasirAs",
-      "version": "1.0.10",
-      "release": "Mengganti logo\nBug Transaksi Kasir",
+      "version": "1.1.0",
+      "release": "Mengubah jalur update",
       "updated_at": {
-        "seconds": 1722908878,
-        "nanoseconds": 611000000
+        "seconds": 1733370044,
+        "nanoseconds": 297000000
       },
-      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=73eebf22-d011-46da-ab9d-d7c6d59dd332"
+      "url": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=19f520f0-1aba-43ec-acdb-ccff2ffea36c"
     }
   ]
 }
