@@ -1,0 +1,38 @@
+{
+  "data": [
+    {
+      "application": {
+        "code": "KASIRAS",
+        "name": "KasirAs"
+      },
+      "releaseHTML": "<p>[Perubahan]</p><ol><li>Mengubah jalur aktivasi</li><li>Mengubah jalur update</li><li>Bug lain-lain</li></ol><p>[Harus dilakukan]</p><ol><li>Sebelum melakukan update, silahkan hapus terlebih dahulu file <strong>.env</strong> yang ada di jalur <strong>[Folder Installasi]\\KasirAs\\vendors</strong></li><li>Silahkan Update.</li></ol>",
+      "releaseText": "[Perubahan]\n\n\nMengubah jalur aktivasi\n\nMengubah jalur update\n\nBug lain-lain\n\n\n[Harus dilakukan]\n\n\nSebelum melakukan update, silahkan hapus terlebih dahulu file .env yang ada di jalur [Folder Installasi]\\KasirAs\\vendors\n\nSilahkan Update.",
+      "url": {
+        "setup": "https://drive.google.com/uc?export=download&id=12hLbBUXvCeNeNFNzLQXQ-pkyuAmxTWSl",
+        "update": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FKasirAs%2Fupdater.zip?alt=media&token=50eaf079-ff98-41c4-9468-671a3529fb7e"
+      },
+      "version": {
+        "text": "1.5.1",
+        "number": 105010
+      },
+      "created": "2024-12-05 10:12:29"
+    },
+    {
+      "application": {
+        "code": "JBUILDER",
+        "name": "JBuilder"
+      },
+      "releaseHTML": "<ol><li>Bug (tidak dapat menghapus ruang ujian, fixed)</li></ol>",
+      "releaseText": "Bug (tidak dapat menghapus ruang ujian, fixed)",
+      "url": {
+        "setup": "https://drive.google.com/uc?export=download&id=1gKYV7yyEBitT-6bMn5Lhtj_T831PMpHE",
+        "update": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FJBuilder%2Fupdate.zip?alt=media&token=eea7ceb1-d576-4d1c-832d-1558cf24ffc7"
+      },
+      "version": {
+        "text": "2.5.1",
+        "number": 205010
+      },
+      "created": "2024-12-04 07:46:27"
+    }
+  ]
+}
