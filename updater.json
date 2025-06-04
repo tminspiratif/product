@@ -33,6 +33,23 @@
         "number": 205010
       },
       "created": "2024-12-04 07:46:27"
+    },
+    {
+      "application": {
+        "code": "FAKE_TOOLS",
+        "name": "Fake Tools"
+      },
+      "releaseHTML": "<p>Bug ScreenShot Frame</p>",
+      "releaseText": "Bug ScreenShot Frame",
+      "url": {
+        "setup": "https://drive.google.com/uc?export=download&id=1RRP_fam4EwtcABkOXphyAQ_ws2kiUfHA",
+        "update": null
+      },
+      "version": {
+        "text": "1.0.1",
+        "number": 100010
+      },
+      "created": "2025-06-04 14:42:44"
     }
   ]
 }
