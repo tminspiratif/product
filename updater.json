@@ -43,7 +43,7 @@
       "releaseText": "Bug ScreenShot Frame",
       "url": {
         "setup": "https://drive.google.com/uc?export=download&id=1RRP_fam4EwtcABkOXphyAQ_ws2kiUfHA",
-        "update": null
+        "update": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FFakeTools%2Fupdate.zip?alt=media&token=bf0f0598-e87e-41f0-8b63-603e2cc79bb0"
       },
       "version": {
         "text": "1.0.1",
