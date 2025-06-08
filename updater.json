@@ -50,6 +50,23 @@
         "number": 100010
       },
       "created": "2025-06-04 14:42:44"
+    },
+    {
+      "application": {
+        "code": "CBTLITE",
+        "name": "CBT Lite"
+      },
+      "releaseHTML": "<p>Optimalisasi Kinerja</p>",
+      "releaseText": "Optimalisasi Kinerja",
+      "url": {
+        "setup": "https://drive.google.com/uc?export=download&id=1qjB-mRchjMS6O3IOWycdEs0y5PId98qE",
+        "update": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FCBTLite%2Fupdate.zip?alt=media&token=f9bb35cd-8ae4-432b-824d-5ec4835d1c78"
+      },
+      "version": {
+        "text": "2.0.8",
+        "number": 200080
+      },
+      "created": "2025-06-08 11:37:44"
     }
   ]
 }
