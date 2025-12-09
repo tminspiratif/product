@@ -56,17 +56,17 @@
         "code": "CBTLITE",
         "name": "CBT Lite"
       },
-      "releaseHTML": "<p>Bug penambahan user</p>",
-      "releaseText": "Bug penambahan user",
+      "releaseHTML": "<p>Bug penambahan usern</p>",
+      "releaseText": "Bug penambahan usern",
       "url": {
         "setup": "https://drive.google.com/uc?export=download&id=1XutNGAgjrAEfEgjnD0sv9sA0tvcDDgYS",
-        "update": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FCBTLite%2Fupdate.zip?alt=media&token=f9bb35cd-8ae4-432b-824d-5ec4835d1c78"
+        "update": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FCBTLite%2Fupdate.zip?alt=media&token=8ee10c0e-53dd-4d23-bfeb-da24fa47366c"
       },
       "version": {
         "text": "2.0.9",
         "number": 200090
       },
-      "created": "2025-06-08 11:37:44"
+      "created": "Invalid date"
     }
   ]
 }
