@@ -470,6 +470,8 @@ class GenerateElement {
     this.chapterContent.appendChild(preElement);
     if (window.Prism) {
       Prism.highlightElement(codeElement);
+    } else if (hljsAny) {
+      hljsAny.highlightElement(codeElement);
     } else if (hljs) {
       hljs.highlightElement(codeElement);
     } else {
