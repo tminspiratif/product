@@ -224,7 +224,6 @@ class GenerateElement {
    * @param {string} text Teks judul.
    */
   setTitleDoc(text) {
-    console.log(this.chapterContent);
     const ugTitleHeader = this.chapterContent.querySelector("#ug-title-header");
     // Cek jika elemen ditemukan
     if (ugTitleHeader) {
@@ -611,7 +610,7 @@ class GenerateElement {
    * @param {object} columnData Objek data untuk satu kolom.
    * @returns {HTMLElement} Elemen div wrapper kolom yang sudah terkonfigurasi.
    */
-  #createGridColumn(columnData) {
+  #createGridColumn(element, columnData) {
     const colWrapper = document.createElement("div");
     colWrapper.classList.add("ug-grid-col-wrapper");
     colWrapper.classList.add(...this.#getGridClasses(columnData).split(" "));
@@ -623,8 +622,8 @@ class GenerateElement {
 
     const colContent = document.createElement("div");
     colContent.classList.add("ug-grid-col-content");
-    const contentGrid = new GenerateElement(this.chapterContent, colContent);
-    this.createContentElement(columnData.children, contentGrid);
+    const contentGrid = new GenerateElement(colContent, element);
+    contentGrid.createContentElement(columnData.children, contentGrid);
     colWrapper.appendChild(contentGrid.getElement());
     return colWrapper;
   }
@@ -643,7 +642,7 @@ class GenerateElement {
       rowPreview.classList.add("ug-" + item.content.align);
     }
     item.content.columns.forEach((columnData, i) => {
-      const columnElement = this.#createGridColumn(columnData);
+      const columnElement = this.#createGridColumn(rowPreview, columnData);
       rowPreview.appendChild(columnElement);
     });
     gridContainer.appendChild(rowPreview);
