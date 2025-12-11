@@ -14,7 +14,7 @@ class GenerateElement {
     return this.chapterContent;
   }
 
-  static createContentElement(elements, toElement) {
+  createContentElement(elements, toElement) {
     elements.forEach((element) => {
       switch (element.type) {
         case "video":
@@ -73,7 +73,7 @@ class GenerateElement {
     });
   }
 
-  static createSectionLevel(elements, startNode) {
+  createSectionLevel(elements, startNode) {
     let level = 1;
     function generate(el, i, startNode) {
       let newnode = (startNode ? startNode : "") + "-" + (i + 1);
@@ -86,7 +86,7 @@ class GenerateElement {
       if (el.type === "grid-row") {
         el.content.columns.forEach((col, j) => {
           newnode += "-" + (j + 1);
-          GenerateElement.createSectionLevel(col.children, newnode);
+          this.createSectionLevel(col.children, newnode);
         });
       }
     }
@@ -109,7 +109,7 @@ class GenerateElement {
    * @param {?number} column.xxl Ukuran kolom untuk breakpoint ekstra-ekstra-besar (XXL).
    * @returns {string} String format deskriptif dari breakpoint yang aktif, contoh: "(SM:6, MD:4, LG:3)".
    */
-  static #formatGridBreakpoints(column) {
+  #formatGridBreakpoints(column) {
     const parts = [];
     if (column.xs !== null) parts.push(`XS:${column.xs}`);
     if (column.sm !== null) parts.push(`SM:${column.sm}`);
@@ -133,7 +133,7 @@ class GenerateElement {
    * @param {?number} column.xxl Ukuran kolom untuk XXL.
    * @returns {string} String kelas CSS yang digabungkan, contoh: "ug-grid-row-item ug-grid-12 ug-grid-md-6".
    */
-  static #getGridClasses(column) {
+  #getGridClasses(column) {
     let classes = "ug-grid-row-item";
 
     // Perhatikan: Kelas XS tidak memiliki prefix '-xs-' (mirip Bootstrap)
@@ -156,7 +156,7 @@ class GenerateElement {
    * @param {string} type Tipe alert (info, warning, tips, note).
    * @returns {string} Kelas CSS kustom yang sesuai (misal: 'info', 'danger', 'success').
    */
-  static #getTypeAlertClass(type) {
+  #getTypeAlertClass(type) {
     switch (type) {
       case "info":
         return "info";
@@ -177,7 +177,7 @@ class GenerateElement {
    * @param {string} type Tipe alert (info, warning, tips, note).
    * @returns {string} String berisi ikon dan label (misal: '💡 Info').
    */
-  static #getCardIcon(type) {
+  #getCardIcon(type) {
     switch (type) {
       case "info":
         return "💡 Info";
@@ -196,7 +196,7 @@ class GenerateElement {
    * Membuat dan mengembalikan elemen promosi sidebar (div) lengkap dengan isinya.
    * * @returns {HTMLElement} Elemen div promosi.
    */
-  static createPromotion() {
+  createPromotion() {
     const promotionContainer = document.createElement("div");
     promotionContainer.className = "promotion-sidebar mt-4 p-3 border rounded";
     const headline = document.createElement("p");
@@ -217,14 +217,15 @@ class GenerateElement {
     return promotionContainer;
   }
 
-  // --- METODE STATIC (TIDAK MEMBUTUHKAN INSTANCE) ---
+  // --- METODE (TIDAK MEMBUTUHKAN INSTANCE) ---
 
   /**
    * Mengatur judul header di DOM.
    * @param {string} text Teks judul.
    */
-  static setTitleDoc(text) {
-    const ugTitleHeader = document.getElementById("ug-title-header");
+  setTitleDoc(text) {
+    console.log(this.chapterContent);
+    const ugTitleHeader = this.chapterContent.querySelector("#ug-title-header");
     // Cek jika elemen ditemukan
     if (ugTitleHeader) {
       ugTitleHeader.textContent = "📚 " + text; // Gunakan textContent untuk keamanan
@@ -236,9 +237,11 @@ class GenerateElement {
    * @param {string} text Teks tautan.
    * @param {string} [url="#"] URL tautan.
    */
-  static createChapterNav(text, articleId, openId) {
-    const ugChapterNav = document.getElementById("chapter-nav");
-    const ugChapterNavCanva = document.getElementById("offcanvasChapterNav");
+  createChapterNav(text, articleId, openId) {
+    const ugChapterNav = this.chapterContent.querySelector("#chapter-nav");
+    const ugChapterNavCanva = this.chapterContent.querySelector(
+      "#offcanvasChapterNav"
+    );
     if (!ugChapterNav) return;
 
     const newLink = document.createElement("a");
@@ -255,9 +258,11 @@ class GenerateElement {
     }
   }
 
-  static createChapterTagNav(text) {
-    const ugChapterNav = document.getElementById("chapter-nav");
-    const ugChapterNavCanva = document.getElementById("offcanvasChapterNav");
+  createChapterTagNav(text) {
+    const ugChapterNav = this.chapterContent.querySelector("#chapter-nav");
+    const ugChapterNavCanva = this.chapterContent.getElementById(
+      "offcanvasChapterNav"
+    );
     if (!ugChapterNav) return;
 
     const newLink = document.createElement("a");
@@ -279,11 +284,11 @@ class GenerateElement {
    * @param {object} item Objek data alert.
    */
   createAlert(item) {
-    const classetype = GenerateElement.#getTypeAlertClass(item.type);
+    const classetype = this.#getTypeAlertClass(item.type);
     const alertDiv = document.createElement("div");
     alertDiv.className = `ug-alert-preview alert ${classetype}`;
     const strongElement = document.createElement("strong");
-    strongElement.innerHTML = GenerateElement.#getCardIcon(item.type);
+    strongElement.innerHTML = this.#getCardIcon(item.type);
     const textNode = document.createTextNode(" " + item.content);
 
     alertDiv.appendChild(strongElement);
@@ -470,8 +475,6 @@ class GenerateElement {
     this.chapterContent.appendChild(preElement);
     if (window.Prism) {
       Prism.highlightElement(codeElement);
-    } else if (hljs) {
-      hljs.highlightElement(codeElement);
     } else {
       console.warn("PrismJS tidak ditemukan. Code block tidak di-highlight.");
     }
@@ -611,9 +614,7 @@ class GenerateElement {
   #createGridColumn(columnData) {
     const colWrapper = document.createElement("div");
     colWrapper.classList.add("ug-grid-col-wrapper");
-    colWrapper.classList.add(
-      ...GenerateElement.#getGridClasses(columnData).split(" ")
-    );
+    colWrapper.classList.add(...this.#getGridClasses(columnData).split(" "));
     if (columnData.style && typeof columnData.style === "object") {
       for (const prop in columnData.style) {
         colWrapper.style[prop] = columnData.style[prop];
@@ -622,8 +623,8 @@ class GenerateElement {
 
     const colContent = document.createElement("div");
     colContent.classList.add("ug-grid-col-content");
-    const contentGrid = new GenerateElement(colContent);
-    GenerateElement.createContentElement(columnData.children, contentGrid);
+    const contentGrid = new GenerateElement(this.chapterContent, colContent);
+    this.createContentElement(columnData.children, contentGrid);
     colWrapper.appendChild(contentGrid.getElement());
     return colWrapper;
   }
