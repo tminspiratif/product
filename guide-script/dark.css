@@ -1,0 +1,189 @@
+html[data-bs-theme="dark"] .ug-title-header {
+    color: #d6d6d6 !important;
+}
+
+html[data-bs-theme="dark"] .nav-link.tag-name {
+    color: #d6d6d6;
+    background: #222529;
+}
+
+html[data-bs-theme="dark"] .doc-link.active {
+    color: #fff !important;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-steps-indicator {
+    background-color: #495057;
+    color: white;
+    border: 3px solid #212529;
+    box-shadow: 0 0 0 1px #495057;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-steps-content-description {
+    color: #c2c2c2 !important;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-alert-preview.success {
+    color: #a3cfbb;
+    background-color: #144a30;
+    border-color: #176a3d;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-alert-preview.info {
+    color: #92c9d7;
+    background-color: #124d5b;
+    border-color: #186f80;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-alert-preview.warning {
+    color: #ffda7a;
+    background-color: #574603;
+    border-color: #7a6109;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-alert-preview.error,
+html[data-bs-theme="dark"] .render-chapter .ug-alert-preview.danger {
+    color: #f7a9b6;
+    background-color: #5c141d;
+    border-color: #8c1e2d;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-alert-preview.secondary {
+    color: #b3b7bb;
+    background-color: #3b3e41;
+    border-color: #52565b;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-alert-preview.light {
+    color: #f8f9fa;
+    background-color: #41464b;
+    border-color: #6c757d;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-info {
+    color: #adb5bd;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-wrapper {
+    border: none;
+    border-radius: 4px;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-general {
+    border-collapse: collapse;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-head {
+    background-color: #2c3034;
+    border-bottom: 2px solid #495057;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-header-cell {
+    color: #f8f9fa;
+    border: none;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-cell {
+    border-top: 1px solid #3e4449;
+    border-left: none;
+    border-right: none;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-body .ug-table-row:nth-child(even) {
+    background-color: #212529;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-body .ug-table-row:hover {
+    background-color: #3e4449;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-param-table-info {
+    color: #64b5f6;
+    margin-top: 0.5rem;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-param-table-wrapper {
+    border: 1px solid #495057;
+    border-radius: 4px;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-parameter {
+    border-collapse: collapse;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-param-table-head {
+    background-color: #2c3034;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-param-header-cell {
+    color: #f8f9fa;
+    border: 1px solid #495057;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-param-table-cell {
+    border: 1px solid #3e4449;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-body .ug-param-table-row:nth-child(even) {
+    background-color: #212529;
+}
+
+html[data-bs-theme="dark"] .render-chapter .ug-table-body .ug-param-table-row:hover {
+    background-color: #3e4449;
+}
+
+[data-bs-theme="dark"] .nav-canva-mobile .nav-link {
+    color: #ced4da;
+    border-bottom: 1px solid #343a40;
+}
+
+[data-bs-theme="dark"] .nav-canva-mobile .nav-link:hover {
+    background-color: #2c3034;
+    color: #64b5f6;
+    /* Biru terang untuk Dark Mode */
+}
+
+[data-bs-theme="dark"] .nav-canva-mobile .nav-link.active {
+    background-color: #212529;
+    color: #64b5f6;
+    border-left: 3px solid #64b5f6;
+}
+
+[data-bs-theme="dark"] #scrollToTopBtn {
+    background-color: #64b5f6;
+    /* Warna biru terang/aksen Dark Mode */
+    color: #121212;
+    /* Warna ikon: Hampir hitam untuk kontras tinggi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    /* Bayangan sedikit lebih gelap */
+}
+
+[data-bs-theme="dark"] #scrollToTopBtn:hover {
+    background-color: #42a5f5;
+    /* Warna sedikit lebih gelap saat di-hover */
+}
+
+[data-bs-theme="dark"] #scrollToTopBtn svg path {
+    fill: currentColor !important;
+}
+
+[data-bs-theme="dark"] #floating-menu-toggle {
+    /* Warna yang sama dengan #scrollToTopBtn agar seragam */
+    background-color: #64b5f6;
+    color: #121212;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* --- Dark Mode Adaptation --- */
+[data-bs-theme="dark"] .promotion-sidebar {
+    background-color: #212529;
+    /* Background gelap */
+    border-color: #343a40 !important;
+    /* Border gelap */
+}
+
+[data-bs-theme="dark"] .promotion-sidebar p.text-muted {
+    color: #b3b7bb !important;
+    /* Teks deskripsi lebih terang */
+}
