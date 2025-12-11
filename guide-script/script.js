@@ -7,7 +7,7 @@
  * @param {Document} element - Objek Document (hasil DOMParser)
  * @returns {object} - Objek yang berisi fungsi-fungsi navigasi
  */
-function configPageRender(genEl, element) {
+function configPageRender(element) {
 
     // --- FUNGSI UTILITAS ---
     
@@ -60,9 +60,6 @@ function configPageRender(genEl, element) {
 
             sectionNav.appendChild(link);
         });
-        
-        // Asumsi genEl.createPromotion() juga membuat elemen di konteks 'element'
-        sectionNav.appendChild(genEl.createPromotion()); 
     }
 
     function setNaviageUrl(e, idnav) {
