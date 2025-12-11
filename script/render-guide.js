@@ -470,6 +470,8 @@ class GenerateElement {
     this.chapterContent.appendChild(preElement);
     if (window.Prism) {
       Prism.highlightElement(codeElement);
+    } else if (hljs) {
+      hljs.highlightElement(codeElement);
     } else {
       console.warn("PrismJS tidak ditemukan. Code block tidak di-highlight.");
     }
