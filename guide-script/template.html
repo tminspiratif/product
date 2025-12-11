@@ -167,19 +167,19 @@
     <script src="stylesheet" href="https://tminspiratif.github.io/product/guide-script/script.js"></script>
 
     <script>
-      const config = configPageRender(document)
-      template
+      const config = configPageRender(document);
+
+      document
+        .getElementById("chapter-nav")
+        .addEventListener("click", function (e) {
+          config.setNaviageUrl(e, "chapter-nav");
+        });
+      document
         .getElementById("offcanvasChapterNav")
-        ?.appendChild(genEl.createPromotion());
-  
-      template
-        .getElementById("offcanvasChapterNav")
-        ?.addEventListener("click", function (e) {
+        .addEventListener("click", function (e) {
           config.setNaviageUrl(e, "offcanvasChapterNav");
         });
-    </script>
-    
-    <script>
+        
       document.addEventListener("DOMContentLoaded", function () {
         // 1. Dapatkan referensi ke tombol melayang
         const floatingButton = document.getElementById("floating-menu-toggle");
