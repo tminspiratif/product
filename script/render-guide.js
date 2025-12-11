@@ -621,7 +621,7 @@ class GenerateElement {
     const colContent = document.createElement("div");
     colContent.classList.add("ug-grid-col-content");
     const contentGrid = new GenerateElement(colContent);
-    createContentElement(columnData.children, contentGrid);
+    GenerateElement.createContentElement(columnData.children, contentGrid);
     colWrapper.appendChild(contentGrid.getElement());
     return colWrapper;
   }
