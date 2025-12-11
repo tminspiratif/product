@@ -1,84 +1,3 @@
-function createContentElement(elements, toElement) {
-  elements.forEach((element) => {
-    switch (element.type) {
-      case "video":
-        toElement.createVideo(element);
-        break;
-      case "rich-text":
-        toElement.createRichText(element);
-        break;
-      case "note":
-      case "info":
-      case "warning":
-      case "tips":
-        toElement.createAlert(element);
-        break;
-      case "grid-row":
-        toElement.createGridRow(element);
-        break;
-      case "paragraph":
-        toElement.createParagraph(element);
-        break;
-      case "heading":
-        toElement.createHeading(element);
-        break;
-      case "subheading":
-        toElement.createSubheading(element);
-        break;
-      case "code-block":
-        toElement.createCodeBlock(element);
-      case "spacer":
-        toElement.createSpacer(element);
-        break;
-      case "bullet-list":
-        toElement.createBulletList(element);
-        break;
-      case "numbered-list":
-        toElement.createNumberedList(element);
-        break;
-      case "steps":
-        toElement.createSteps(element);
-        break;
-      case "general-table":
-        toElement.createGeneralTable(element);
-        break;
-      case "parameter-table":
-        toElement.createParameterTable(element);
-        break;
-      case "image":
-        toElement.createImage(element);
-        break;
-      case "link":
-        toElement.createLink(element);
-        break;
-      default:
-        break;
-    }
-  });
-}
-
-function createSectionLevel(elements, startNode) {
-  let level = 1;
-  function generate(el, i, startNode) {
-    let newnode = (startNode ? startNode : "") + "-" + (i + 1);
-    if (newnode.startsWith("-")) {
-      newnode = newnode.substring(1);
-    }
-    el.sectionId = newnode;
-    el.level = el.type === "heading" ? 1 : el.type === "subheading" ? 2 : 3;
-    level += 1;
-    if (el.type === "grid-row") {
-      el.content.columns.forEach((col, j) => {
-        newnode += "-" + (j + 1);
-        createSectionLevel(col.children, newnode);
-      });
-    }
-  }
-  elements.forEach((el, i) => {
-    generate(el, i, startNode);
-  });
-}
-
 class GenerateElement {
   // 1. Deklarasi properti instance (Opsional di JS modern, tapi baik untuk kejelasan)
   chapterContent;
@@ -93,6 +12,87 @@ class GenerateElement {
 
   getElement() {
     return this.chapterContent;
+  }
+
+  static createContentElement(elements, toElement) {
+    elements.forEach((element) => {
+      switch (element.type) {
+        case "video":
+          toElement.createVideo(element);
+          break;
+        case "rich-text":
+          toElement.createRichText(element);
+          break;
+        case "note":
+        case "info":
+        case "warning":
+        case "tips":
+          toElement.createAlert(element);
+          break;
+        case "grid-row":
+          toElement.createGridRow(element);
+          break;
+        case "paragraph":
+          toElement.createParagraph(element);
+          break;
+        case "heading":
+          toElement.createHeading(element);
+          break;
+        case "subheading":
+          toElement.createSubheading(element);
+          break;
+        case "code-block":
+          toElement.createCodeBlock(element);
+        case "spacer":
+          toElement.createSpacer(element);
+          break;
+        case "bullet-list":
+          toElement.createBulletList(element);
+          break;
+        case "numbered-list":
+          toElement.createNumberedList(element);
+          break;
+        case "steps":
+          toElement.createSteps(element);
+          break;
+        case "general-table":
+          toElement.createGeneralTable(element);
+          break;
+        case "parameter-table":
+          toElement.createParameterTable(element);
+          break;
+        case "image":
+          toElement.createImage(element);
+          break;
+        case "link":
+          toElement.createLink(element);
+          break;
+        default:
+          break;
+      }
+    });
+  }
+
+  static createSectionLevel(elements, startNode) {
+    let level = 1;
+    function generate(el, i, startNode) {
+      let newnode = (startNode ? startNode : "") + "-" + (i + 1);
+      if (newnode.startsWith("-")) {
+        newnode = newnode.substring(1);
+      }
+      el.sectionId = newnode;
+      el.level = el.type === "heading" ? 1 : el.type === "subheading" ? 2 : 3;
+      level += 1;
+      if (el.type === "grid-row") {
+        el.content.columns.forEach((col, j) => {
+          newnode += "-" + (j + 1);
+          GenerateElement.createSectionLevel(col.children, newnode);
+        });
+      }
+    }
+    elements.forEach((el, i) => {
+      generate(el, i, startNode);
+    });
   }
 
   /**
