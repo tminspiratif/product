@@ -75,7 +75,7 @@ class GenerateElement {
 
   createSectionLevel(elements, startNode) {
     let level = 1;
-    function generate(el, i, startNode) {
+    const generate = (el, i, startNode) => {
       let newnode = (startNode ? startNode : "") + "-" + (i + 1);
       if (newnode.startsWith("-")) {
         newnode = newnode.substring(1);
@@ -89,7 +89,7 @@ class GenerateElement {
           this.createSectionLevel(col.children, newnode);
         });
       }
-    }
+    };
     elements.forEach((el, i) => {
       generate(el, i, startNode);
     });
