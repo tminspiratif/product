@@ -22,17 +22,17 @@
         "code": "JBUILDER",
         "name": "JBuilder"
       },
-      "releaseHTML": "<ol><li>Bug (tidak dapat menghapus ruang ujian, fixed)</li></ol>",
-      "releaseText": "Bug (tidak dapat menghapus ruang ujian, fixed)",
+      "releaseHTML": "<ol><li>Optimized Registered (Bug Fixed)</li></ol>",
+      "releaseText": "Optimized Registered (Bug Fixed)",
       "url": {
-        "setup": "https://drive.google.com/uc?export=download&id=1gKYV7yyEBitT-6bMn5Lhtj_T831PMpHE",
+        "setup": "https://drive.google.com/uc?export=download&id=1ejGAH3IP-qF-SOBKGhZqhWd2c9qwWAa3",
         "update": "https://firebasestorage.googleapis.com/v0/b/myproduct-1ee0e.appspot.com/o/Update%2FJBuilder%2Fupdate.zip?alt=media&token=eea7ceb1-d576-4d1c-832d-1558cf24ffc7"
       },
       "version": {
-        "text": "2.5.1",
-        "number": 205010
+        "text": "2.5.6",
+        "number": 205060
       },
-      "created": "2024-12-04 07:46:27"
+      "created": "Invalid date"
     },
     {
       "application": {
